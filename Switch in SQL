@@ -1,0 +1,7 @@
+SELECT  SALARYAMOUNT as salary,
+CASE
+    WHEN salaryamount > 40000 THEN ">40000"
+    WHEN salaryamount < 40000 THEN "<40000"
+    ELSE "=40000"
+END AS bonus
+FROM salary;
